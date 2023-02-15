@@ -8,7 +8,7 @@ function ContactMe({ pageInfo }) {
 
   const onSubmit = (data) => {
     console.log(data);
-    window.location.href = `mailto:adityasingh11156@gmail?subject=${data.subject}&body=Hi,my name is ${data.name}. ${data.message} (${data.email})`;
+
     // comment to check is window hydration error to nhi aa rhi,nhi isse n aa rhi so uncomment it
     //this is templated email structure told by sonny see 2:24Hrs of it,,i don't know it's working bs kam kr jaye,,sonny ke m ka,m kr rha tha but mere m kam nhi kar rha,,check it after making it ????????
     //this will open the mail client of user to mail on my email,whichever here in front of mailto: with data user inputs in my form input fields
@@ -21,7 +21,7 @@ function ContactMe({ pageInfo }) {
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
           I have got just what you need.{" "}
-          <span className="decoration-[#F7AB0A]/50 underline">Lets' talk.</span>
+          <span className="decoration-[#F7AB0A]/50 underline">Lets talk</span>
         </h4>
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">

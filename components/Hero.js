@@ -6,17 +6,17 @@ import BackgroundCircles from "./BackgroundCircles";
 //we can build it's functanlty whiuch we using from this if we want ,but we dont't have to if have helping library ,,,but some libraries are heavier so fr productio its good to check size
 
 function Hero({ pageInfo }) {
-  // console.log("i am hero");,why it is infinite rendering
-  const [text, count] = useTypewriter({
-    //yha sonny pageInfo?.name use kr rha tha optional chainnig jbki hm n kr pa rhe pta nhi kyu krte hi ,code red ho jata h,ya to is highlighter ko nbhi pta us abre m yha hmara kuch updated nhi nh kyuki ye khasiyat feb 2022 m aayi h and typescript nad java script dono k liye h chekc krna kty n kam kr rha ...kya problem abhi hm diect . se access kr rhe h ?. se nhi ..usme error n aati agr value undefined h to undefined aati value.. pagenfo null ho fir bhi, jbki isme aayegi agr null pr . lgake access krneg to ..
-    words: [
-      `Hi my name is ${pageInfo.name}`,
-      "Guy, who love's Milk ",
-      "<ButLovesToCodeMore />",
-    ],
-    loop: true,
-    delaySpeed: 2000,
-  });
+  console.log("i am hero"); //,why it is infinite rendering
+  // const [text, count] = useTypewriter({
+  //   //yha sonny pageInfo?.name use kr rha tha optional chainnig jbki hm n kr pa rhe pta nhi kyu krte hi ,code red ho jata h,ya to is highlighter ko nbhi pta us abre m yha hmara kuch updated nhi nh kyuki ye khasiyat feb 2022 m aayi h and typescript nad java script dono k liye h chekc krna kty n kam kr rha ...kya problem abhi hm diect . se access kr rhe h ?. se nhi ..usme error n aati agr value undefined h to undefined aati value.. pagenfo null ho fir bhi, jbki isme aayegi agr null pr . lgake access krneg to ..
+  //   words: [
+  //     `Hi my name is ${pageInfo.name}`,
+  //     "Guy, who love's Milk ",
+  //     "<ButLovesToCodeMore />",
+  //   ],
+  //   loop: true,
+  //   delaySpeed: 2000,
+  // });
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
@@ -43,7 +43,7 @@ function Hero({ pageInfo }) {
           {pageInfo.role}
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
-          <span className="mr-3">{text}</span>
+          <span className="mr-3">Hi my name is Aditya Singh</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
         <div className="pt-5">

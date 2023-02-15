@@ -39,7 +39,9 @@ export default function Home({
       </Head>
       <Header socials={socials} />
       {/* making part of page using section tag it is SEO friendly saying that this is section of your page,id to reach directly on this part of page   w/o  scrolling by just clicking on href=#hero  */}
-      <section id="hero" className="snap-start"></section>
+      <section id="hero" className="snap-start">
+        {<Hero pageInfo={pageInfo} />}
+      </section>
       <section id="about" className="snap-center">
         <About pageInfo={pageInfo} />
       </section>

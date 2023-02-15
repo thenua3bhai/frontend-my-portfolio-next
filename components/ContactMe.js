@@ -7,8 +7,6 @@ function ContactMe({ pageInfo }) {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
-
     // comment to check is window hydration error to nhi aa rhi,nhi isse n aa rhi so uncomment it
     //this is templated email structure told by sonny see 2:24Hrs of it,,i don't know it's working bs kam kr jaye,,sonny ke m ka,m kr rha tha but mere m kam nhi kar rha,,check it after making it ????????
     //this will open the mail client of user to mail on my email,whichever here in front of mailto: with data user inputs in my form input fields

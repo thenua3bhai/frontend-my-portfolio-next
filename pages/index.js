@@ -73,7 +73,7 @@ export default function Home({
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const pageInfo = await fetchPageInfo(); //function defined in another file used to call from here wow
   //is pageInfo fetch m 2 hr lg gye,null aa rha tha,, .env file ke var. ki direct value bhi rkhi and sanity client isi page p bhi bnaya like harry but nhi hati,,akhir m pageInfo ki jagh skills ftech kiya wo aa gya fir sanity m jake dekha  pageInfo ka data unPublished tha wo wha to unpublished pr query chlke vision m dta aa rha tha but unpublished dta yha kese aata,so publish kiya tb aaya,chhoti si eror itna time le gyi
   //.env ka nam .env.local kiya pta n isse kya fark pda  pr  us file m sare text white ho gye the ...build bnate time ise le rha tha next khud and ise
@@ -96,6 +96,6 @@ export const getStaticProps = async () => {
     //nextjs will attempt to regenerate the page when a req. comes in at most once in every 10 sec. in prod env. in dev. environment regenerate at every req.ie 10 sec bad req. aayegi to uske liye updated milega tbhi agr nhi aayi t khud nhi kreg areq. krne p update krke dega prev se 10 sec bad aayi to agr phle aayi to whi milega..cached krke rkh leta h so cached data milega 1- sec se phle
     //and sanity ke update ke bad just time lgta h use bhi pura nya dast update krne and tb ye call lkrega revalidate time ke bad tb updated data milerga saniy 1 -2 sec m nya kr leta h,,bs ye pta nhi kya live server pr se itni tej krega ya kitna tim lega yha nya data reflect krne m and nye ke liye hm req. krneg 10 sec bad tbhi mil skta auto maticallak e page p n dkihega wevsite m..use reload krenge ya khi dubara kholenge tb milega..
     //or when we edit next code it reloads but vercel p ajke fir bar bar code change n hoga so reload ya new search se link ke kam bnega new tab m
-    revalidate: 10,
+    // revalidate: 10,
   };
 };

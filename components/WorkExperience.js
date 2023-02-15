@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
 
 function WorkExperience({ experiences }) {
-  console.log("ye raha experiences", experiences);
+  // console.log("ye raha experiences", experiences);
   return (
     <motion.div
       initial={{ opacity: 0 }}

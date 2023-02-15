@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { urlFor } from "../sanity";
 
 function ExperienceCard({ experience }) {
-  console.log("m hu experience", experience);
+  //console.log("m hu experience", experience);
   //article for each card make it seo friendly
   return (
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[200px] h-[500px] md:w-[300px] xl:w-[400px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">

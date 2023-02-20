@@ -17,7 +17,7 @@ export default function BackgroundCircles() {
       }}
       className="relative flex justify-center items-center"
     >
-      {/* in relative element moves(top,botttom left right) according to its normal postion and in absolute it moves according to its first parent postion  */}
+      {/* in relative element moves(top,bottom left right) according to its normal position and in absolute it moves according to its first parent position  */}
       <div className="absolute border border-[#333333] rounded-full h-[200px] w-[200px] mt-52 animate-ping" />
       <div className="rounded-full border border-[#333333] h-[300px] w-[300px] absolute mt-52" />
       <div className="rounded-full border border-[#333333] h-[500px] w-[500px] absolute mt-52" />

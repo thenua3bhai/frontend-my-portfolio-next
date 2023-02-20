@@ -22,11 +22,10 @@ function About({ pageInfo }) {
         transition={{
           duration: 1.2,
         }}
-        //   in animate we get only in web page refersh or loaidng ,agr load ksi aur partko kre tb jaye to animate na hoga ,,but in whileInView we get animation when we see that any times coming from above or below that section on same page.viewport once bhi kroge tb bhi load hone ke bad first time jb jaoge tb animate hoga jbki animate m jo part web page se refersh hoga wahi animate dikehga... krke dekh lena yhi alg h viewport once and animae lgamne m baki almost same h ..see 1:17Hrs in video
         whileInView={{ opacity: 1, x: 0 }}
-        // viewPort={{ once: true }},,hme har bar chahiye
+        // viewPort={{ once: true }},
         src={urlFor(pageInfo.profilePic).url()}
-        //object cover maintain original look image doesnt distort evn we change height and widht ratio andr wahi same raito ki dikhegi
+        //object cover maintain original look image doesn't distort even we change height and width ratio
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[450px]"
       />
 
